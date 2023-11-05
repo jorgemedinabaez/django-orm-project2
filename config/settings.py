@@ -39,6 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'blogsite2',
     'relaciones',
+    'migraciones',
+    'crudapp',
 ]
 
 MIDDLEWARE = [
