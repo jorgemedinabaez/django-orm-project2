@@ -17,7 +17,7 @@
         {% for empleado in empleados %}
             <tr>
                 <td>{{empleado.emp_id}}</td>
-                <td>{{empleado.nombre}}</a></td>
+                <td><a class='text-decoration-none text-reset' href="{% url 'empleado_detalle' empleado.pk  %}">{{empleado.nombre}}</a></td>
                 <td>{{empleado.correo}}</td>
                 <td>{{empleado.designacion}}</td>
                 <td>

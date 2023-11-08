@@ -18,8 +18,8 @@ def insertar(request):
 
 def mostrar(request):
     empleados = Empleado.objects.all()
-    num_visitas =request.session.get('num_visits', 1)
-    request.session['num_visits'] = num_visitas+1
+    num_visitas =request.session.get('num_visits',1)
+    request.session['num_visits'] = num_visitas + 1
     context = {
         'empleados': empleados,
         'num_visitas':num_visitas,
